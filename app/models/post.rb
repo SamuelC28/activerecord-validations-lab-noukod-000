@@ -2,7 +2,7 @@ class Clickbait < ActiveModel::Validator
   def validate(record)
     # if record.title
     messages = ["Won't Believe", "Secret", "Top [number]", "Guess"]
-    messages.each do |msg|
+    messages.map do |msg|
       unless record.title.include? msg # { |t| record.title.include? t }
         record.errors[:title] << 'the title does not contain the words'
       end
