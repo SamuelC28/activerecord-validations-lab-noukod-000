@@ -17,4 +17,3 @@ class Clickbait < ActiveModel::Validator
     end
   end
 end
-
