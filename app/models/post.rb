@@ -1,5 +1,5 @@
 class Clickbait < ActiveModel::Validator
-  def validate(record)
+  def validate(title)
     # if record.title
     messages = ["Won't Believe", "Secret", "Top [number]", "Guess"]
     messages.map do |msg|
